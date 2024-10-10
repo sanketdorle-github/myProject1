@@ -1,0 +1,142 @@
+.table-container {
+    width: 190%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.container{
+    width: 100%;
+    color:blue ;
+}
+.table-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff3d00;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+th, td {
+    padding: 7px;
+    text-align: left;
+    border-bottom: 1px solid #ffe0b3;
+}
+
+th {
+    background-color: #ff3d00;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px; /* Increased font size */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+td {
+    font-size: 16px; /* Increased font size */
+    color: #333;
+}
+
+tr:last-child td {
+    
+    border-bottom: none;
+}
+
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #fff5e6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(255, 140, 0, 0.1);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff9f0;
+}
+
+.pagination {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff3d00;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+    display: flex;
+    align-items: center;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #ff3d00;
+    transform: translateY(-2px);
+}
+
+.pagination button:disabled {
+    background-color: #ffd9b3;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    margin: 0 16px;
+    font-weight: 500;
+    color: #ff3d00;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .table-heading {
+        font-size: 24px;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 14px; /* Adjusted for mobile */
+    }
+}
+
+.organisation-chain {
+    width: 1300px; /* Adjust the width as needed */
+}
+
+.closing-date{
+    width: 27rem;
+}
+.opening-date{
+    width: 30rem;
+}
+
+.days-left {
+    color: #ff3d00; /* Orange color */
+    font-weight: bold; /* Optional: Make the text bold */
+}
