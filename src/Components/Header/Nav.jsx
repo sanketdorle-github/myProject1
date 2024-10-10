@@ -9,7 +9,7 @@ export default function Nav({ setMobileToggle }) {
         <DropDown>
           <ul>
             <li>
-              <Link to="/" onClick={() => setMobileToggle(false)}>
+              <Link to="/" onClick={() git commit -m "first commit"=> setMobileToggle(false)}>
               Home Version 1
               </Link>
             </li>
