@@ -36,7 +36,7 @@ const Faq = () => {
                         <div className="col-lg-6 col-md-12">
                             <div className="section-title text-left">
                                 <SectionTitle
-                                    SubTitle="SOLUTEK COMPANY"
+                                    SubTitle="TenderWIN"
                                     Title="Keeping Your Business<br> Safe and <span>Available.</span>"
                                 ></SectionTitle>
                             </div>

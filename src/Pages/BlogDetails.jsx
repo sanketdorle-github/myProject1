@@ -4,7 +4,7 @@ import BreadCumb from "../Components/Common/BreadCumb";
 const BlogDetails = () => {
     return (
         <div className="blog-detail">
-            <BreadCumb Title="Blog Details"></BreadCumb>
+            <BreadCumb Title="Tenders Details"></BreadCumb>
             <BlogDetail></BlogDetail>
         </div>
     );

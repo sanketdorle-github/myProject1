@@ -4,7 +4,7 @@ import BreadCumb from "../Components/Common/BreadCumb";
 const BlogSidebar = () => {
     return (
         <div className="Blog-sidebar">
-            <BreadCumb Title="Blog Sidebar"></BreadCumb>
+            <BreadCumb Title="Tenders By Organisation"></BreadCumb>
             <Blog4></Blog4>
         </div>
     );

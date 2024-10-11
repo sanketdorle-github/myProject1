@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import Form from "../Form/Form";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
+// import {loadBackgroudImages} from "../../../public/assets/Img/contact.jpg";
 import VideoModal from "../VideoModal/VideoModal";
 
 
@@ -24,25 +25,19 @@ const Contact1 = () => {
 	  };
       
     return (
-        <div className="contact-area" data-background="/assets/images/contact-bg2.png">
+        <div className="contact-area" data-background="/assets/Img/contact.jpg">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-7">
                             <div className="section-title text-left">
                             <SectionTitle
                                     SubTitle="CONTACT US"
-                                    Title="Make an Online Appoinemnt Booking<br> For Business Planing."
+                                    Title="Our experts provide tailored insights and support for your tender needs."
                             ></SectionTitle>
                             </div>
                             <Form></Form>
                         </div>
-                        <div className="col-lg-6 col-md-5">
-                            <div className="contact-box">
-                                <div className="contact-video-icon">	
-                                    <span onClick={handelClick} className="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true">Play</span>
-                                </div>
-                            </div>
-                        </div>
+                    {/* added bg image for contact us page  */}
                     </div>
                 </div>
                 <VideoModal

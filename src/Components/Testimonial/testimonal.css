@@ -1,0 +1,37 @@
+.count-box {
+    background-color: #F4F4F4; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover effect */
+    position: relative; /* Required for the background image positioning */
+    overflow: hidden; /* Ensure the background image does not overflow */
+}
+
+.count-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-image: url('/assets/images/service6.png'); /* Add hover background image */
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: white; /* Change text color for better visibility */
+}
+
+.count-box h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: navy; /* Set the color of the subheadings in the count boxes */
+}
+
+.count-box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Keep the number color */
+    position: relative; /* Ensure it appears above the background */
+    z-index: 1; /* Ensure the text is above the background image */
+}
+
+/* testimonal.css */
+
+.tender-counts h4 {
+    color: navy; /* Set the color of the title to navy blue */
+}

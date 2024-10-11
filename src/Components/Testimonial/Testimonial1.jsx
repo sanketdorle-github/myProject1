@@ -3,14 +3,14 @@ import SectionTitle from "../Common/SectionTitle";
 import data from '../../Data/testimonial1.json';
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
+import "./testimonal.css";
 
 const Testimonial1 = () => {
-
     useEffect(() => {
         loadBackgroudImages();
-      }, []);
+    }, []);
 
-      const settings = {
+    const settings = {
         dots: false,
         infinite: true,
         speed: 600,
@@ -19,73 +19,69 @@ const Testimonial1 = () => {
         arrows: false,
         swipeToSlide: true,
         responsive: [
-          {
-            breakpoint: 1399,
-            settings: {
-              slidesToShow: 3,
+            {
+                breakpoint: 1399,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
             }
-          },
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 2,
-            }
-          },{
-            breakpoint: 575,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
         ]
-      };      
+    };
 
     return (
-        <div className="testimonial-area" data-background="/assets/images/testi-bg.png">
+        <div className="testimonial-area">
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div className="section-title text-center">
-                            <SectionTitle
-                                    SubTitle="TESTIMONIALS"
-                                    Title="What Our Customer <span>Says</span>"
-                            ></SectionTitle>
+                <div className="tender-counts mt-4 text-center">
+                    <div className="text-center">
+                        <SectionTitle
+                            SubTitle="TenderWINc"
+                            Title="Tender Statistics"
+                        />
+                    </div>
+                    <div className="row justify-content-around mt-3">
+                        <div className="col-md-2 count-box">
+                            <h5>Fresh Tenders</h5>
+                            <p>485859</p>
+                        </div>
+                        <div className="col-md-2 count-box">
+                            <h5>Live Tenders</h5>
+                            <p>1500000</p>
+                        </div>
+                        <div className="col-md-2 count-box">
+                            <h5>Archive Tenders</h5>
+                            <p>4950973</p>
+                        </div>
+                        <div className="col-md-2 count-box">
+                            <h5>Tender Results</h5>
+                            <p>XXX</p> {/* Replace XXX with actual data if available */}
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="testi_list owl-carousel cs_slider_gap_301">
-                            <Slider {...settings}>
-                            {data.map((item, index)=>(
-                            <div key={index} className="col-lg-12 col-md-12">
-                                <div className="testi-box">
-                                    <div className="testi-single-box">
-                                        <div className="testi-icon">
-                                            <img src="/assets/images/testi1.png" alt="testi1" />
-                                        </div>
-                                        <div className="testi-content">
-                                            <p className="testi-text">{item.desc}</p>
-                                            <ul className="testi-rating">
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                                <li><i className="bi bi-star-fill"></i></li>
-                                            </ul>
-                                            <h3 className="testi-title">{item.title} <span>{item.subTitle}</span></h3>
-                                        </div>
-                                    </div>
-                                    <div className="testi-author">
-                                        <img src={item.image} alt="testi4" />
-                                    </div>
-                                </div>
-                            </div>
-                            ))}
-                            </Slider>
+                </div>
+
+                {/* Customer Count Section */}
+                <div className="customer-count mt-4 text-center">
+                    <h4>Our Customers</h4>
+                    <div className="row justify-content-center mt-3">
+                        <div className="col-md-4 count-box">
+                            <h5>Total Customers</h5>
+                            <p>2000+</p> {/* Replace with actual customer count if available */}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     );
 };
 

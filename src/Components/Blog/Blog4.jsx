@@ -17,7 +17,7 @@ const Blog4 = () => {
         const fetchData = async () => {
             try {
                 const response = await fetch(
-                    "http://192.168.29.129:3000/get_tender_by_organisationid",
+                    "http://54.169.90.210:3000/get_tender_by_organisationid",
                     {
                         method: "POST",
                         headers: {
@@ -83,69 +83,58 @@ const Blog4 = () => {
     return (
         // <div className="blog-area style-grid">
         <div className="container">
-            {/* <div className="row d-flex justify-content-center">  
-                      <div className="col-lg-8">
-                        <div className="row"> */}
-
-            <div className="table-container">
-                <h2 className="table-heading">Tender Information</h2>
-                <div className="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>S.No</th>
-                                <th className="organisation-chain">Organisation Chain</th>
-
-                                <th>Published Date</th>
-                                <th className="opening
-                    -date">Opening Date</th>
-                                <th className="closing-date">Closing Date</th>
-                                <th>Price</th>
-                                <th>Location</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {currentItems.length > 0 ? (
-                                currentItems.map((tender, index) => (
-                                    <tr key={index}>
-                                        <td>{indexOfFirstItem + index + 1}</td>
-                                        <td>{tender.tender_organisation_chain}</td>
-                                        <td>{tender.tender_e_Published_date}</td>
-                                        <td>{tender.tender_opening_date}</td>
-                                        <td>
-                                            {tender.tender_closing_date} <br />
-                                            <span className="days-left">{calculateDaysLeft(tender.tender_closing_date)} days left</span>
-
-                                        </td>
-
-
-                                        <td><span>INR <br /><span></span></span>10 <span>CR</span></td>
-                                        <td>Maharashtra</td>
-
-                                    </tr>
-                                ))
-                            ) : (
-                                <tr>
-                                    <td colSpan={7}>No tenders available.</td>
-                                </tr>
-                            )}
-                        </tbody>
-                    </table>
-                </div>
-                <div className="pagination">
-                    <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                        <ChevronLeft className="w-4 h-4 mr-2" />
-                        Previous
-                    </button>
-                    <span>{`Page ${currentPage} of ${totalPages}`}</span>
-                    <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-                        Next
-                        <ChevronRight className="w-4 h-4 ml-2" />
-                    </button>
-                </div>
-            </div>
-
+        <h2 className="table-heading">Tender Information</h2>
+        <div className="table-container">
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th className="organisation-chain">Organisation Chain</th>
+                  <th>Published Date</th>
+                  <th className="opening-date">Opening Date</th>
+                  <th className="closing-date">Closing Date</th>
+                  <th>Price</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                {currentItems.length > 0 ? (
+                  currentItems.map((tender, index) => (
+                    <tr key={tender.id}>
+                      <td>{indexOfFirstItem + index + 1}</td>
+                      <td>{tender.tender_organisation_chain}</td>
+                      <td>{tender.tender_e_Published_date}</td>
+                      <td>{tender.tender_opening_date}</td>
+                      <td>
+                        {tender.tender_closing_date} <br />
+                        <span className="days-left">{calculateDaysLeft(tender.tender_closing_date)} days left</span>
+                      </td>
+                      <td><span>INR <br /><span>{tender.price}</span></span></td>
+                      <td>{tender.location}</td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={7}>No tenders available.</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+          <div className="pagination">
+            <button onClick={handlePrevPage} disabled={currentPage === 1}>
+              <ChevronLeft className="w-4 h-4 mr-2" />
+              Previous
+            </button>
+            <span>{`Page ${currentPage} of ${totalPages}`}</span>
+            <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+              Next
+              <ChevronRight className="w-4 h-4 ml-2" />
+            </button>
+          </div>
         </div>
+      </div>
 
         // </div>
 

@@ -1490,7 +1490,7 @@ p.section-descr::before {
 }
 
 .testimonial-area h1.section-main-title {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .testimonial-area h5.section-sub-title {

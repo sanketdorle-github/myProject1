@@ -25,7 +25,7 @@ const Home2 = () => {
             <About2
                 bgImg="/assets/images/home-two/about-bg.png"
                 MainImg="/assets/images/home-two/about-thu2.png"
-                SubTitle="SOLUTEK COMPANY"
+                SubTitle="TenderWIN"
                 Title="Essential IT Solutions for<br> Modern Businesses"
                 Content="Monotonectally repurpose maintainable infrastruct whereas solutek in fermentum quis tempo sapien maximus design."
                 listTitle1="Website & Mobile application design & Development"

@@ -15,9 +15,9 @@ const Home = () => {
         <div className="home-page">
             <Hero1
                 bgImg="/assets/images/hero-bg.jpg"
-                SubTitle="SOLUTEK IT SERVICES"
-                Title="The Beauty Behind<br>IT Services."
-                Content="Where your interests international networks intersect provid custom software solutions for any value software."
+                SubTitle="TenderWIN"
+                Title=" Welcome to  TenderWIN<br>"
+                Content="Discover comprehensive solutions for all your tender needs. We provide expert guidance, resources, and tools to help you navigate the tendering process with ease."
                 BtnText="EXPLORE MORE"
                 BtnLink="/about"
                 Image="/assets/images/hero-thumb.png"
@@ -25,13 +25,16 @@ const Home = () => {
             ></Hero1>
             <Features></Features>
             <About1
+            // changes made here by sanket
                 MainImg="/assets/images/about-thumb.jpg"
                 ImgTitle="BEST IT SOLUTION"
-                SubTitle="SOLUTEK COMPANY"
-                Title="Essential IT Solutions For<br> Modern <span>Businesses.</span>"
-                Content="Monotonectally repurpose maintainable infrastruct whereas solutek in fermentum quis tempo sapien maximus design."
-                listTitle="Cloud Based Solution"
-                BottomText="Monotonectally repurpose maintainable infrastruct whereas solutek in fermentum quis tempo sapien maximus design."
+                SubTitle="TENDERWIN "
+                Title="Innovative Tender Solutions<br> for Modern Procurement <span>Businesses.</span>"
+                Content="Simplifying procurement processes for enhanced competitiveness and growth."
+                listTitle=" Tenders with AI-Powered Insights"
+                BottomText="Harness the power of artificial intelligence to gain actionable insights, streamline tender processes, and make informed decisions that drive competitive advantage.
+
+"
                 BtnUrl="/about"
                 BtnText="EXPLORE MORE"
             ></About1>
@@ -45,7 +48,7 @@ const Home = () => {
             <Faq></Faq>
             <Testimonial1></Testimonial1>
             <Contact1></Contact1>
-            <Blog1></Blog1>
+            {/* <Blog1></Blog1> */}
         </div>
     );
 };
