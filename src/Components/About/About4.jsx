@@ -24,6 +24,7 @@ const About4 = ({MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxTitle1,
 					<div className="row">
 						<div className="col-lg-6">
 							<div className="section-title text-left">
+								
 								<h5 className="section-sub-title">{SubTitle}</h5>
 								<h1 className="section-main-title">{parse(Title)}</h1>
 								<p className="section-title-descr">{Content}
@@ -61,7 +62,7 @@ const About4 = ({MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxTitle1,
 						<div className="col-lg-6">
 							<div className="about-us-thumb">
 								<div className="about-us-img">
-									<img src={MainImg} alt="thumb" />
+									<img src={MainImg} style={{width:"650px",height:"530px"}} alt="thumb" />
 								</div>
 								<div className="about-us-video-icon" onClick={handelClick}>	
 									<span className="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"><i className="bi bi-play"></i><span>WATCH VIDEO</span></span>

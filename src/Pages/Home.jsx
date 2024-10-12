@@ -46,6 +46,7 @@ const Home = () => {
             <Brand></Brand>
             <Pricing></Pricing>
             <Faq></Faq>
+            <hr />
             <Testimonial1></Testimonial1>
             <Contact1></Contact1>
             {/* <Blog1></Blog1> */}

@@ -1081,9 +1081,10 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 .cs_site_header.header_style_2.cs_style_1.cs-gescout_sticky .container::before {
   opacity: 1;
 }
-.main-page-area{
+/* //changes by sanket for nav bar */
+/* .main-page-area{
   padding: 30px 0 0;
-}
+} */
 @media (max-width: 767px) {
   .cs_site_header.cs_style_1 .cs_top_header {
       display: none;
@@ -1129,7 +1130,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0px 50px 0;
+  margin: 0px 0px 0;
 }
 
 .hero-contant h5 {
@@ -2820,10 +2821,18 @@ a.active {
 =======================================*/
 
 .testimonial-area {
+ /* changes made by sanket */
+    background: #f4f4f4;
+    padding: 120px 0 120px;
+    position: relative;
+    z-index: 1;
+  
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 50px 0;
+  /* margin: 0 50px 0; */
   padding: 120px 0 120px;
 }
 
@@ -3404,7 +3413,7 @@ ul.testi-rating li {
 =======================================*/
 
 .footer-area {
-  background-color: #ff3b00;
+  background-color: #000000;
   /* background: url(/assets/images/footer-bg.png); */
   background-position: center;
   background-repeat: no-repeat;
@@ -4035,6 +4044,18 @@ ul.list-style-one li a:hover {
   background: #fff;
   z-index: -1;
 }
+
+/*  changes made by sanket for the navigation bar */
+.sticky {
+  background-color: #fff; /* Change background on sticky */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow on scroll */
+}
+
+
 
 /*
 <!-- =====================================-->
@@ -5118,6 +5139,19 @@ ul.list-style-one li a:hover {
   background-color: #ff3c00;
   color:#fff;
 }
+/* made changes here by sanket */
+
+/* Adding white shadow to the logo */
+.logo-shadow {
+  filter: drop-shadow(2px 2px 5px white); /* Horizontal, vertical, blur, and color */
+  transition: 0.3s ease-in-out; /* Smooth transition on hover or change */
+}
+
+/* Optional: Make the shadow more prominent on hover */
+.logo-shadow:hover {
+  filter: drop-shadow(4px 4px 10px white); /* Larger shadow on hover */
+}
+
 
 /*solutek home page 03 css 
   -----------------------*/

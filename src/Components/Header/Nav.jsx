@@ -26,6 +26,7 @@ export default function Nav({ setMobileToggle }) {
                 </Link>
               </li>
               <li>
+                
                 <Link to="/team" onClick={() => setMobileToggle(false)}>
                   Our Team
                 </Link>

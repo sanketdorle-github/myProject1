@@ -46,7 +46,7 @@ const Testimonial1 = () => {
                 <div className="tender-counts mt-4 text-center">
                     <div className="text-center">
                         <SectionTitle
-                            SubTitle="TenderWINc"
+                            SubTitle="TenderWIN"
                             Title="Tender Statistics"
                         />
                     </div>
@@ -80,6 +80,12 @@ const Testimonial1 = () => {
                         </div>
                     </div>
                 </div>
+                <div className="faq-shape">
+                        <img src="/assets/images/faq2.png" alt="faq2" />
+                    </div>
+                    <div className="faq-shape2">
+                        <img src="/assets/images/faq3.png" alt="faq2" />
+                    </div>
             </div>
         </div>
     );

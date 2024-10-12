@@ -15,14 +15,17 @@
     background-position: center; /* Center the image */
     color: white; /* Change text color for better visibility */
 }
+.count-box:hover  h5{
+    color: white; 
+}
 
 .count-box h5 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: navy; /* Set the color of the subheadings in the count boxes */
+    color: #15088b; /* Set the color of the subheadings in the count boxes */
 }
 
-.count-box p {
+    .count-box p {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333; /* Keep the number color */

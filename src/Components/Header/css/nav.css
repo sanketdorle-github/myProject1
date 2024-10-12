@@ -1,99 +1,115 @@
+/* General styling for the nav component */
 .navbar {
+    background-color: #343a40; /* Dark background for navbar */
+    padding: 0px 20px;
+    position: relative; /* Default position */
+    width: 100%;
+    z-index: 1000; /* Ensure navbar stays on top */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease;
+    box-shadow: none; /* No shadow initially */
+  }
+.parent-div {
+    width: 100% ;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    /* gap: 590px; */
 }
-
-.cs_nav_list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-.cs_nav_list li {
-    position: relative;
-    margin: 0 15px;
-}
-
-.cs_nav_list li a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #333;
-    font-weight: bold; /* Make links bold */
-    transition: color 0.3s; /* Smooth transition */
-}
-
-.cs_nav_list li:hover a {
-    color: #007bff; /* Change to your preferred hover color */
-}
-
-.search-bar {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-}
-
-.search-bar input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    font-weight: bold; /* Make input text bold */
-}
-
-.categories-dropdown {
-    position: relative;
-    padding: 10px;
-    background-color: #ff3d00;
-    border: 1px solid #ccc;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    font-weight: bold; /* Make dropdown text bold */
-}
-
-.categories-dropdown:hover {
-    background-color: #e9ecef; /* Change to preferred hover color */
-}
-
-.search-bar button {
-    padding: 10px;
+  /* Sticky navbar */
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    background-color: rgba(52, 58, 64, 0.9); /* Slightly transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow when sticky */
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  /* Navbar links */
+  .navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* White color for links */
+    padding: 8px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Change color to Bootstrap primary color on hover */
+  }
+  
+  /* Active link styling */
+  .navbar-nav .nav-item .nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff; /* Add underline to active links */
+  }
+  
+  /* Toggler button for mobile */
+  .navbar-toggler {
     border: none;
-    background-color: #007bff; /* Change to your preferred button color */
-    color: white;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    font-weight: bold; /* Make button text bold */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-.search-bar button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-.categories-dropdown ul {
+    padding: 0;
+    
+  }
+  
+  .navbar-toggler-icon {
+    background-image: none;
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
+  
+  /* Toggler bars */
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    background-color: #fff;
+    width: 24px;
+    height: 3px;
+    display: block;
     position: absolute;
-    background: white;
-    border: 1px solid #ccc;
-    list-style: none;
-    padding: 10px;
-    display: none; /* Hidden by default */
-}
-
-.categories-dropdown:hover ul {
-    display: block; /* Show on hover */
-}
-
-.categories-dropdown ul li {
-    padding: 5px 10px;
-}
-
-.categories-dropdown ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold; /* Make dropdown links bold */
-}
-
-.categories-dropdown ul li a:hover {
-    color: #007bff; /* Change to preferred hover color */
-}
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+  
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+  
+  /* Active state for mobile toggle */
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: transparent;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  /* Responsive styling for mobile view */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+      padding: 0;
+    }
+  
+    .navbar-nav .nav-item {
+      padding: 10px 0;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      font-size: 18px;
+    }
+  }
+  

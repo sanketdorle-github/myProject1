@@ -1,0 +1,16 @@
+.btn-text{
+    color:#ff3d02 ;
+}
+.div-text:hover{
+    color:#000000 ;
+}
+/* Change the button text color to white on hover of the entire box */
+.service-single-box:hover .btn-text {
+    color: white !important;
+}
+
+/* Optional: You can also change the button background color on hover if you want */
+.service-single-box:hover .service-btn {
+    color: #fff; /* You can customize the background color */
+}
+

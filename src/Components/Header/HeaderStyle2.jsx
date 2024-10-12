@@ -43,9 +43,12 @@ export default function HeaderStyle2({ variant }) {
                 <img
                 src={location.pathname === '/' || location.pathname === '/home' ? '/assets/images/logo.png' : '/assets/images/footer-logo.png'}
                 alt="Logo"
+                className="logo-shadow"
+
                 />
               </Link>
               </div>
+            
               <div className="cs_main_header_center">
                 <div className="cs_nav cs_primary_font fw-medium">
                   <span
@@ -72,3 +75,4 @@ export default function HeaderStyle2({ variant }) {
     </header>
   );
 }
+

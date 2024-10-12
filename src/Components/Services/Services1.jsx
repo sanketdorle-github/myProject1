@@ -1,6 +1,7 @@
 import SectionTitle from "../Common/SectionTitle";
 // import data from '../../Data/services1.json';
 import { Link } from "react-router-dom";
+import "./service1.css"
 
 
 const Services1 = () => {
@@ -54,16 +55,16 @@ const Services1 = () => {
                             </div>
                         </div>
                         {data.map((item, i) => (
-                        <div key={i} className="col-xl-3 col-lg-4 col-md-6">
-                            <div className="service-single-box">
-                                <div className="service-icon h- ">
-                                    <img src={item.icon}  style={{width: "50px"}} alt="service1" />
+                        <div key={i} className=" col-xl-3 col-lg-4 col-md-6 ">
+                            <div className="service-single-box ">
+                                <div className="service-icon hover-effect  " >
+                                    <img src={item.icon}  style={{width: "50px"}} alt="service1" className="icon-invert"/>
                                 </div>
-                                <div className="service-content">
+                                <div className="service-content  ">
                                     <h3 className="service-title">{item.title}</h3>
                                     <p className="service-text">{item.desc}</p>
-                                    <div className="service-btn">
-                                        <Link to={item.btnLink}><i className="bi bi-plus"></i><span> {item.btnText}</span></Link>
+                                    <div className="service-btn ">
+                                        <Link to={item.btnLink}><i className="bi bi-plus  "></i><span className="btn-text "> {item.btnText}</span></Link>
                                     </div>
                                 </div>
                             </div>

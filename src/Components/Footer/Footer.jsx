@@ -73,7 +73,7 @@ const Footer = () => {
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="footer-widget">
                                 <div className="footer-logo">
-                                <Link to="/"><img src={LogoContent.img1} alt="footer-logo" /></Link>
+                                <Link to="/"><img src="../assets/images/logo.png" alt="footer-logo" className="logo-shadow" /></Link>
                                 </div>
                                 <p className="footer-widget-text">{LogoContent.Content}</p>
                                 <div className="footer-social">

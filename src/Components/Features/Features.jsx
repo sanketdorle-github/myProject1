@@ -8,9 +8,10 @@ const Features = () => {
                         <div className="feature-box">
                         {data.map((item, i) => (
                             <div key={i} className="feature-sinble-single-box">
-                                <div className="feature-icon">
+                                {/* <div className="feature-icon">
                                     <img src={item.img} alt="feature1" />
-                                </div>
+                                </div> */}
+                               
                                 <div className="feature-content">
                                     <h3 className="feature-title">{item.title}</h3>
                                     <p className="feature-text">{item.desc}</p>
